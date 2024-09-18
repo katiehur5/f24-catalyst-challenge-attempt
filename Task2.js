@@ -26,7 +26,8 @@ todoList = [
 function deleteTodo(index) {
     console.log("Before: " + todoList)
     // YOUR CODE HERE
-    console.log("After:" + todoList)
+    todoList.splice(index, 1);
+    console.log("After: " + todoList)
 }
 
 /**
@@ -35,7 +36,7 @@ function deleteTodo(index) {
  * we do it here
  */
 function mainTask2() {
-    deleteTodo(0);
+    deleteTodo(2);
 }
 
 // This bit of code ensures that a main method exists! If it doesn't, then it throws an error
